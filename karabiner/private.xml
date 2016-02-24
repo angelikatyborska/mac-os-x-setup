@@ -1,0 +1,159 @@
+<?xml version="1.0"?>
+<root>
+	<item>
+		<name>Remap F19 to Control_R + Option_R + Command_R + Shift_R</name>
+		<appendix>This creates a fake extra modifier key. Use Seil to map CapsLock to F19.</appendix>
+
+		<identifier>usercustom.f19_to_extra_modifier</identifier>
+
+		<autogen>
+			--KeyToKey--
+			KeyCode::F19,
+
+			KeyCode::COMMAND_R,
+			ModifierFlag::OPTION_R | ModifierFlag::CONTROL_R | ModifierFlag::SHIFT_R
+		</autogen>
+	</item>
+
+	<item>
+		<name>Control_R + Option_R + Command_R + Shift_R + J/I/K/L to Left/Up/Down/Right</name>
+		<appendix>F19 should be remapped to those four modifiers, CapsLock to F19 for convenience.</appendix>
+		<identifier>usercustom.extra_modifier_jikl_to_arrows</identifier>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::J, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::CURSOR_LEFT
+		</autogen>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::I, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::CURSOR_UP
+		</autogen>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::K, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::CURSOR_DOWN
+		</autogen>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::L, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::CURSOR_RIGHT
+		</autogen>
+	</item>
+
+	<item>
+		<name>Control_R + Option_R + Command_R + Shift_R + Angle Brackets to Brackets</name>
+		<appendix>Convenient for Ruby code. F19 should be remapped to those four modifiers, CapsLock to F19 for convenience.</appendix>
+		<identifier>usercustom.extra_modifier_brackets</identifier>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::COMMA, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::BRACKET_LEFT
+		</autogen>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::DOT, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::BRACKET_RIGHT
+		</autogen>
+	</item>
+
+	<item>
+		<name>Control_R + Option_R + Command_R + Shift_R + N/M to Curly Braces </name>
+		<appendix>Convenient for Ruby code. F19 should be remapped to those four modifiers, CapsLock to F19 for convenience.</appendix>
+		<identifier>usercustom.extra_modifier_curly_braces</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::N, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::BRACKET_LEFT,
+			ModifierFlag::SHIFT_R
+		</autogen>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::M, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::BRACKET_RIGHT,
+			ModifierFlag::SHIFT_R
+		</autogen>
+	</item>
+
+	<item>
+		<name>Control_R + Option_R + Command_R + Shift_R + Slash to Backslash </name>
+		<appendix>Convenient for Ruby code. F19 should be remapped to those four modifiers, CapsLock to F19 for convenience.</appendix>
+		<identifier>usercustom.extra_modifier_backshlash</identifier>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::SLASH, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::BACKSLASH
+		</autogen>
+	</item>
+
+	<item>
+		<name>Control_R + Option_R + Command_R + Shift_R + H to Pipe </name>
+		<appendix>Convenient for Ruby code. F19 should be remapped to those four modifiers, CapsLock to F19 for convenience.</appendix>
+		<identifier>usercustom.extra_modifier_pipe</identifier>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::H, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::BACKSLASH,
+			ModifierFlag::SHIFT_R
+		</autogen>
+	</item>
+
+	<item>
+		<name>Control_R + Option_R + Command_R + Shift_R + O/P to Minus/Equal </name>
+		<appendix>Convenient for Ruby code. F19 should be remapped to those four modifiers, CapsLock to F19 for convenience.</appendix>
+		<identifier>usercustom.extra_modifier_minus_equals</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::O, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::MINUS
+		</autogen>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::P, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::EQUAL
+		</autogen>
+	</item>
+
+	<item>
+		<name>Control_R + Option_R + Command_R + Shift_R + Y/U to Underscore/Plus </name>
+		<appendix>Convenient for Ruby code. F19 should be remapped to those four modifiers, CapsLock to F19 for convenience.</appendix>
+		<identifier>usercustom.extra_modifier_underscore_plus</identifier>
+		<autogen>
+			__KeyToKey__
+			KeyCode::Y, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::MINUS,
+			ModifierFlag::SHIFT_R
+		</autogen>
+
+		<autogen>
+			__KeyToKey__
+			KeyCode::U, ModifierFlag::COMMAND_R, ModifierFlag::CONTROL_R, ModifierFlag::OPTION_R, ModifierFlag::SHIFT_R,
+
+			KeyCode::EQUAL,
+			ModifierFlag::SHIFT_R
+		</autogen>
+	</item>
+</root>

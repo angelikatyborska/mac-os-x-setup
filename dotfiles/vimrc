@@ -1,0 +1,69 @@
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Bundle 'gmarik/Vundle'
+Bundle 'mattn/emmet-vim'
+Bundle 'powerline/powerline'
+Bundle 'bling/vim-airline'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'tpope/vim-haml'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'terryma/vim-multiple-cursors'
+
+call vundle#end()
+filetype plugin indent on
+
+syntax enable " enable syntax processing
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set number " show line numbers
+set so=7
+set cursorline
+set wildmenu " visual autocomplete for command menu
+set lazyredraw " redraw only when we need to
+set showmatch " highlight matching braces
+set incsearch " search as characters are entered
+nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+set hlsearch " highlight matches
+inoremap jk  <esc> " jk is escape
+set foldenable
+set foldlevelstart=10 " opn most folds by default
+set foldnestmax=10
+set foldmethod=indent " fold based on indent level
+
+iabbrev </ </<C-X><C-O>
+let g:airline#extensions#tabline#enabled = 1
+
+let mapleader=";"
+
+" This allows buffers to be hidden if you've modified a buffer.
+" This is almost a must if you wish to use buffers in this way.
+set hidden
+
+" To open a new empty buffer
+" This replaces :tabnew which I used to bind to this mapping
+nmap <leader>t :enew<cr>
+
+" Move to the next buffer
+nmap <leader>k :bnext<CR>
+
+" Move to the previous buffer
+nmap <leader>j :bprevious<CR>
+
+" Close the current buffer and move to the previous one
+" This replicates the idea of closing a tab
+nmap <leader>bq :bp <BAR> bd #<CR>
+
+" Show all open buffers and their status
+nmap <leader>bl :ls<CR>
+
+set background=dark
+colorscheme solarized 
+
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+set laststatus=2
+let g:Powerline_symbols = 'fancy'
+set vb

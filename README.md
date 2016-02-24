@@ -1,5 +1,5 @@
 # Mac OS X setup
-Some things that need to be done to get a fresh install of Mac OS X configured to my liking. This is only a guide, a helping hand, not a robust solution that will work everywhere and for everyone. These scipts are not well tested, I might have forgotten about something crucial (because setting up a system after a clean install happens like once a year or even less often).
+Some things that need to be done to get a fresh install of Mac OS X configured to my liking. This is only a guide, a helping hand, not a robust solution that will work everywhere and for everyone. These scipts are not well tested, I might have forgotten about something crucial (because setting up a system after a clean install happens like once a year for me).
 
 ## System Preferences
 - Keyboard
@@ -27,6 +27,12 @@ $ ./brew_install.sh
 $ ./brew_cask_install.sh
 ```
 
+## Dotfiles
+
+```bash
+$ ./dotfiles/makesymlinks.sh
+```
+
 ## Install stuff manually
 
 - MacTex
@@ -47,9 +53,3 @@ $ ./brew_cask_install.sh
 		- Everything user-defined
 		- Change F1..F19 Key -> For PC Keyboards -> Change F1..F12 to brightness control, volume control etc.
 		- For PC Users -> Change PC Application Key -> Application Key to Fn
-
-## Dotfiles
-
-```bash
-$ ./dotfiles/makesymlinks.sh
-```

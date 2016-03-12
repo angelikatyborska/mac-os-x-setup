@@ -5,3 +5,4 @@ brew install brew-cask
 brew install nmap
 brew install postgresql
 brew install jsonpp
+brew install tree

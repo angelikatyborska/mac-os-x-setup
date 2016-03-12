@@ -2,7 +2,7 @@
 
 dir=~/mac-os-x-setup/dotfiles
 olddir=~/dotfiles_old
-files="bash_profile curlrc gitignore vimrc"
+files="bash_profile curlrc gitignore vimrc inputrc"
 
 mkdir -p $olddir
 

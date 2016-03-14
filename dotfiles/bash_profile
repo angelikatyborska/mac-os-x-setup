@@ -1,7 +1,9 @@
 export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export PATH=$PATH:/usr/local/sbin
+export PATH=$PATH:~/bin
 
 alias pdflatex="/Library/TeX/Root/bin/x86_64-darwin/pdflatex"
+alias ls="ls -hal"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

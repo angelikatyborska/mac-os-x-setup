@@ -12,3 +12,5 @@ export GITAWAREPROMPT=~/.bash/git-aware-prompt
 source "${GITAWAREPROMPT}/main.sh"
 
 export PS1="\[$txtpur\]\u\[$txtrst\] at \[$txtblu\]\h\[$txtrst\] in \[$txtylw\]\w\[$txtrst\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\n\$ "
+
+eval $(docker-machine env)

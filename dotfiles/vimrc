@@ -60,9 +60,6 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
 
-set background=dark
-colorscheme solarized 
-
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 set laststatus=2
 let g:Powerline_symbols = 'fancy'

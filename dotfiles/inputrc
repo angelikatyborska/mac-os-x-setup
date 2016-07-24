@@ -1,7 +1,1 @@
 set completion-ignore-case on
-
-set editing-mode vi
-$if mode=vi
-	set keymap vi-insert
-	"jk": vi-movement-mode
-$endif

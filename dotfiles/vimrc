@@ -16,9 +16,10 @@ call vundle#end()
 filetype plugin indent on
 
 syntax enable " enable syntax processing
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set clipboard=unnamed
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set number " show line numbers
 set so=7
 set cursorline

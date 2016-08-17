@@ -3,7 +3,7 @@ brew update
 
 brew install brew-cask
 brew install nmap
-brew install postgresql
+brew install vim
 brew install jsonpp
 brew install tree
 brew install elixir

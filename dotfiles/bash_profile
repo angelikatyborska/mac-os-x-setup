@@ -15,3 +15,17 @@ export PS1="\[$txtpur\]\u\[$txtrst\] at \[$txtblu\]\h\[$txtrst\] in \[$txtylw\]\
 
 HISTCONTROL=ignoreboth
 alias psql="/Library/PostgreSQL/9.5/bin/psql -U postgres"
+
+rubymine() {
+	RUBYMINE="/Applications/RubyMine.app/Contents/MacOS/rubymine"
+	if [[ $@ == "." ]]; then
+		command $RUBYMINE $(pwd)
+	else
+		command $RUBYMINE "$@"
+	fi
+}
+
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin

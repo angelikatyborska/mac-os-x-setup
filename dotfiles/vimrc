@@ -30,7 +30,8 @@ set showmatch " highlight matching braces
 set incsearch " search as characters are entered
 nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
 set hlsearch " highlight matches
-inoremap jk  <esc> " jk is escape
+imap jk <ESC> 
+vmap jk <ESC> 
 set foldenable
 set foldlevelstart=10 " opn most folds by default
 set foldnestmax=10

@@ -12,6 +12,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'tpope/vim-surround'
 
 call vundle#end()
 filetype plugin indent on

@@ -7,6 +7,22 @@ Some things that need to be done to get a fresh install of Mac OS X configured t
     - Caps Lock: No Action
     - Option: Command (if using an Apple Keyboard)
     - Command: Option (if using an Apple Keyboard)
+- Mission Control
+  - Hot Corners
+    - Top Right: Desktop
+    - Bottom Right: Mission Control
+    - Top Left: Application Windows
+- Date & Time
+  - Clock
+    - :heavy_check_mark: Show date
+
+## Finder defaults
+
+```bash
+defaults write com.apple.finder AppleShowAllFiles YES
+defaults write com.apple.finder CreateDesktop false
+killall Finder
+```
 
 ## Command Line Tools
 
@@ -33,23 +49,18 @@ $ ./brew_cask_install.sh
 $ ./dotfiles/makesymlinks.sh
 ```
 
-## Install stuff manually
-
-- MacTex
-
 ## Configure manually
 
 - Git
   - Add user.name and user.email to global config
 - Alfred 2
-  - Add diki.pl to Web Search
+  - Add English and German diki.pl to Web Search
 - iTerm 2
   - Load Solarized Dark color scheme
 - Seil
   - Map CapsLock to F19
 - Karabiner
-	- Copy private.xml
-	- Check:
-		- Everything user-defined
-		- Change F1..F19 Key -> For PC Keyboards -> Change F1..F12 to brightness control, volume control etc.
-		- For PC Users -> Change PC Application Key -> Application Key to Fn
+  - Check:
+    - Everything user-defined
+      - Change F1..F19 Key -> For PC Keyboards -> Change F1..F12 to brightness control, volume control etc.
+      - For PC Users -> Change PC Application Key -> Application Key to Fn

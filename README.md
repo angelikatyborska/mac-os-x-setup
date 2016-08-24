@@ -36,20 +36,6 @@ xcode-select --install
 ./install.sh
 ```
 
-## Install stuff via Brew
-
-```bash
-./brew_install.sh
-./brew_cask_install.sh
-```
-
-## Dotfiles
-
-```bash
-./dotfiles/makesymlinks.sh
-ln -s ~/mac-os-x-setup/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
-```
-
 ## Configure manually
 
 - Git

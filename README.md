@@ -1,5 +1,5 @@
 # Mac OS X setup
-Some things that need to be done to get a fresh install of Mac OS X configured to my liking. This is only a guide, a helping hand, not a robust solution that will work everywhere and for everyone. These scipts are not well tested, I might have forgotten about something crucial (because setting up a system after a clean install happens like once a year for me).
+This repository is probably not very interesting to anyone but me. It's all about the things that need to be done to get a fresh install of Mac OS X configured to my liking. I'm writing all of this down here so that I do not have to think too much when reinstalling the system.
 
 ## System Preferences
 - Keyboard
@@ -57,7 +57,9 @@ ln -s ~/mac-os-x-setup/karabiner/private.xml ~/Library/Application\ Support/Kara
 - Alfred 2
   - Add English and German diki.pl to Web Search
 - iTerm 2
-  - Load Solarized Dark color scheme
+  - Profiles
+    - Colors: Solarized Dark preset
+    - Text: 13pt
 - Seil
   - Map CapsLock to F19
 - Karabiner

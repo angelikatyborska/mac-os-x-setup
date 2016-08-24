@@ -64,3 +64,6 @@ ln -s ~/mac-os-x-setup/karabiner/private.xml ~/Library/Application\ Support/Kara
   - :heavy_check_mark: Everything user-defined
   - :heavy_check_mark: Change F1..F19 Key -> For PC Keyboards -> Change F1..F12 to brightness control, volume control etc.
   - :heavy_check_mark: For PC Users -> Change PC Application Key -> Application Key to Fn
+  - Key Repeat
+    - Delay unitl repeat: 500
+    - Key repeat: 40

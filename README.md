@@ -27,26 +27,27 @@ killall Finder
 ## Command Line Tools
 
 ```bash
-$ xcode-select --install
+xcode-select --install
 ```
 
 ## Install stuff
 
 ```bash
-$ ./install.sh
+./install.sh
 ```
 
 ## Install stuff via Brew
 
 ```bash
-$ ./brew_install.sh
-$ ./brew_cask_install.sh
+./brew_install.sh
+./brew_cask_install.sh
 ```
 
 ## Dotfiles
 
 ```bash
-$ ./dotfiles/makesymlinks.sh
+./dotfiles/makesymlinks.sh
+ln -s ~/mac-os-x-setup/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
 ```
 
 ## Configure manually
@@ -60,7 +61,6 @@ $ ./dotfiles/makesymlinks.sh
 - Seil
   - Map CapsLock to F19
 - Karabiner
-  - Check:
-    - Everything user-defined
-      - Change F1..F19 Key -> For PC Keyboards -> Change F1..F12 to brightness control, volume control etc.
-      - For PC Users -> Change PC Application Key -> Application Key to Fn
+  - :heavy_check_mark: Everything user-defined
+  - :heavy_check_mark: Change F1..F19 Key -> For PC Keyboards -> Change F1..F12 to brightness control, volume control etc.
+  - :heavy_check_mark: For PC Users -> Change PC Application Key -> Application Key to Fn

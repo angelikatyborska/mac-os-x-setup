@@ -51,6 +51,9 @@ brew cask install --appdir="/Applications" silverlight
 brew cask install --appdir="/Applications" dropbox
 
 ./dotfiles/makesymlinks.sh
+./bin/makesymlinks.sh
+./LaunchAgents/makesymlinks.sh
+
 ln -s ~/mac-os-x-setup/karabiner/private.xml ~/Library/Application\ Support/Karabiner/
 
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim

@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 dir=~/mac-os-x-setup/dotfiles
 olddir=~/dotfiles_old

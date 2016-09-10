@@ -11,6 +11,8 @@
     <string>~/bin/blog-monitoring</string>
   </array>
   <key>StartInterval</key>
-  <integer>14400</integer>
+  <integer>7200</integer>
+  <key>RunAtLoad</key>
+  <true />
 </dict>
 </plist>

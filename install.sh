@@ -30,6 +30,9 @@ brew install node
 brew install go
 brew install exercism
 brew install imagemagick
+brew install cowsay
+brew install sl
+brew install figlet
 
 brew tap caskroom/cask
 

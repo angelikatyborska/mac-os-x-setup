@@ -16,21 +16,48 @@ export PS1="\[$txtpur\]\u\[$txtrst\] at \[$txtblu\]\h\[$txtrst\] in \[$txtylw\]\
 HISTCONTROL=ignoreboth
 
 rubymine() {
-	RUBYMINE="/Applications/RubyMine.app/Contents/MacOS/rubymine"
-	if [[ $@ == "." ]]; then
-		command $RUBYMINE $(pwd)
-	else
-		command $RUBYMINE "$@"
-	fi
+  RUBYMINE="/Applications/RubyMine.app/Contents/MacOS/rubymine"
+  if [[ $@ == "." ]]; then
+    command $RUBYMINE $(pwd)
+  else
+    command $RUBYMINE "$@"
+  fi
 }
 
 killscreens() {
-    screen -ls | grep Detached | cut -d. -f1 | awk '{print $1}' | xargs kill
+  screen -ls | grep Detached | cut -d. -f1 | awk '{print $1}' | xargs kill
 }
 
 commit-diff-against-origin() {
-	BRANCH=$(git rev-parse --abbrev-ref HEAD)
-	git log --left-right --graph --cherry-pick --oneline origin/$BRANCH..$BRANCH
+  BRANCH=$(git rev-parse --abbrev-ref HEAD)
+  git log --left-right --graph --cherry-pick --oneline origin/$BRANCH..$BRANCH
+}
+
+gitr() {
+  local GIT_COMMAND=$2;
+  local MAX_DEPTH=$1;
+  local OLD_PATH=$(pwd)
+
+  for FILE in $(command ls); do
+    if [ -d $FILE ]; then
+      cd $FILE &&
+      printf "\n$txtylw$(pwd)$txtrst\n" &&
+
+      if [ -d .git ]; then
+        git $GIT_COMMAND;
+      else
+        printf "$txtred    not a git repository$txtrst";
+      fi
+
+      if ((MAX_DEPTH > 1)); then
+        gitr $(expr $MAX_DEPTH - 1) $GIT_COMMAND;
+      fi
+
+      cd ..;
+    fi
+  done
+
+  cd $OLD_PATH;
 }
 
 export GOPATH=$HOME/golang

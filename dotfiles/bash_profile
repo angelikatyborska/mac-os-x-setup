@@ -24,8 +24,13 @@ rubymine() {
 	fi
 }
 
-killscreens () {
+killscreens() {
     screen -ls | grep Detached | cut -d. -f1 | awk '{print $1}' | xargs kill
+}
+
+commit-diff-against-origin() {
+	BRANCH=$(git rev-parse --abbrev-ref HEAD)
+	git log --left-right --graph --cherry-pick --oneline origin/$BRANCH..$BRANCH
 }
 
 export GOPATH=$HOME/golang

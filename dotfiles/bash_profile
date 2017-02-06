@@ -2,6 +2,11 @@ export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:~/bin
 
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
 alias pdflatex="/Library/TeX/Root/bin/x86_64-darwin/pdflatex"
 alias ls="ls -hal"
 
@@ -60,7 +65,6 @@ gitr() {
   cd $OLD_PATH;
 }
 
-export GOPATH=$HOME/golang
-export GOROOT=/usr/local/opt/go/libexec
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
+bye-bye-branches() {
+  git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done
+}

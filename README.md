@@ -42,6 +42,21 @@ xcode-select --install
   - Add user.name and user.email to global config
 - Alfred 2
   - Add English and German diki.pl to Web Search
+  - Web Search
+    - `dict` - `http://www.dict.cc/?s={query}`
+    - `diki` - `https://www.diki.pl/slownik-angielskiego?q={query}`
+    - `dikig` - `https://www.diki.pl/slownik-niemieckiego?q={query}`
+    - `collins` - `https://www.collinsdictionary.com/dictionary/german-english/{query}`
+  - Workflows
+    - [slackfred](http://www.packal.org/workflow/slackfred)
+    - [advanced-google-maps-search](http://www.packal.org/workflow/advanced-google-maps-search)
+    - [convert](http://www.packal.org/workflow/convert)
+    - [timezones](http://www.packal.org/workflow/timezones-0)
+    - [caniuse](http://www.packal.org/workflow/can-i-use)
+    - [font-awesome](https://github.com/ruedap/alfred-font-awesome-workflow)
+    - [encode-decode](https://github.com/willfarrell/alfred-encode-decode-workflow)
+    - [colors](http://www.packal.org/workflow/colors)
+    - [npms](https://github.com/sindresorhus/alfred-npms)
 - iTerm 2
   - Profiles
     - Colors: Solarized Dark preset

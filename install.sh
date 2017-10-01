@@ -47,7 +47,6 @@ brew cask install --appdir="/Applications" shady
 brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" shiftit
 brew cask install --appdir="/Applications" vlc
-brew cask install --appdir="/Applications" filezilla
 brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" libreoffice
 brew cask install --appdir="/Applications" thunderbird
@@ -55,6 +54,10 @@ brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" rubymine
 brew cask install --appdir="/Applications" silverlight
 brew cask install --appdir="/Applications" dropbox
+brew cask install --appdir="/Applications" telegram-desktop
+brew cask install --appdir="/Applications" discord
+brew cask install --appdir="/Applications" mongo-management-studio
+brew cask install --appdir="/Applications" slack
 
 ./dotfiles/makesymlinks.sh
 ./bin/makesymlinks.sh

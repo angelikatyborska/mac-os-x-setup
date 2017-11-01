@@ -3,10 +3,16 @@ This repository is probably not very interesting to anyone but me. It's all abou
 
 ## System Preferences
 - Keyboard
-  - Modifier Keys
-    - Caps Lock: No Action
-    - Option: Command (if using an Apple Keyboard)
-    - Command: Option (if using an Apple Keyboard)
+  - Keyboard
+    - Modifier Keys
+      - Caps Lock: No Action
+      - Option: Command (if using an Apple Keyboard)
+      - Command: Option (if using an Apple Keyboard)
+  - Shortcuts
+    - Select the previous input source Shift + Command + L
+  - Input Sources
+    - Polish Pro
+    - [USGerman Keyboard Layout](https://hci.rwth-aachen.de/USGermanKeyboard)
 - Mission Control
   - Hot Corners
     - Top Right: Desktop
@@ -14,7 +20,7 @@ This repository is probably not very interesting to anyone but me. It's all abou
     - Top Left: Application Windows
 - Date & Time
   - Clock
-    - :heavy_check_mark: Show date
+    - :white_check_mark: Show date
 
 ## Finder defaults
 
@@ -61,12 +67,13 @@ xcode-select --install
   - Profiles
     - Colors: Solarized Dark preset
     - Text: 13pt
-- Seil
-  - Map CapsLock to F19
-- Karabiner
-  - :heavy_check_mark: Everything user-defined
-  - :heavy_check_mark: Change F1..F19 Key -> For PC Keyboards -> Change F1..F12 to brightness control, volume control etc.
-  - :heavy_check_mark: For PC Users -> Change PC Application Key -> Application Key to Fn
-  - Key Repeat
-    - Delay unitl repeat: 500
-    - Key repeat: 40
+- RubyMine
+  - Editor
+    - General
+      - :white_check_mark: Use soft wraps in editor
+      - :white_check_mark: Ensure line feed at file end on Save
+      - :white_check_mark: Highlight current scope
+      - :x: Copy as rich text by default
+      - Editor Tabs
+        - :white_check_mark: Mark modified tabs with asterisk
+        - :x: Show tabs in single row

@@ -68,3 +68,7 @@ gitr() {
 bye-bye-branches() {
   git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done
 }
+
+if [ -f ~/.bash_profile_priv ]; then
+  source ~/.bash_profile_priv
+fi

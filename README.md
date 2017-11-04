@@ -53,6 +53,7 @@ xcode-select --install
     - `diki` - `https://www.diki.pl/slownik-angielskiego?q={query}`
     - `dikig` - `https://www.diki.pl/slownik-niemieckiego?q={query}`
     - `collins` - `https://www.collinsdictionary.com/dictionary/german-english/{query}`
+    - `conj` - `http://conjugator.reverso.net/conjugation-german-verb-{query}.html`
   - Workflows
     - [slackfred](http://www.packal.org/workflow/slackfred)
     - [advanced-google-maps-search](http://www.packal.org/workflow/advanced-google-maps-search)

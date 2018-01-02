@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" http://angelika.me);
+STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://angelika.me);
 
 TITLE="Angelika.me";
 

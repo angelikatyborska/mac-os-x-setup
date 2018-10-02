@@ -69,6 +69,18 @@ bye-bye-branches() {
   git fetch -p && for branch in `git branch -vv | grep ': gone]' | awk '{print $1}'`; do git branch -D $branch; done
 }
 
+exercism-download-and-test() {
+  local uuid=$1;
+  local output=$(exercism download --uuid $uuid);
+  echo $output;
+  local dir=$(echo $output | sed 's/.*Downloaded to //');
+  cd $dir;
+  local test_file=$(echo *_test.exs);
+  cat $test_file | grep -v '@tag :pending' > tmp;
+  mv tmp $test_file;
+  elixir $test_file;
+}
+
 if [ -f ~/.bash_profile_priv ]; then
   source ~/.bash_profile_priv
 fi

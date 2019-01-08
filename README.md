@@ -47,7 +47,8 @@ xcode-select --install
 - Git
   - Add user.name and user.email to global config
 - Alfred 2
-  - Add English and German diki.pl to Web Search
+  - Default Results - Setup fallback results
+    - Remove Google, put DuckDuckGo on top
   - Web Search
     - `dict` - `http://www.dict.cc/?s={query}`
     - `diki` - `https://www.diki.pl/slownik-angielskiego?q={query}`
@@ -65,6 +66,8 @@ xcode-select --install
     - [colors](http://www.packal.org/workflow/colors)
     - [npms](https://github.com/sindresorhus/alfred-npms)
 - iTerm 2
+  - General
+    - :x: Copy to pasteboard on selection
   - Profiles
     - Colors: Solarized Dark preset
     - Text: 13pt

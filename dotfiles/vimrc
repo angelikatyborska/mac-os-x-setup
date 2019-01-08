@@ -24,6 +24,7 @@ set shiftwidth=2
 set softtabstop=2
 set number " show line numbers
 set so=7
+set backspace=indent,eol,start
 set cursorline
 set wildmenu " visual autocomplete for command menu
 set lazyredraw " redraw only when we need to

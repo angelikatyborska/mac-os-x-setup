@@ -46,6 +46,7 @@ xcode-select --install
 
 - Git
   - Add user.name and user.email to global config
+  - Set `~/.gitignore` as `core.excludesfile`
 - Alfred 2
   - Default Results - Setup fallback results
     - Remove Google, put DuckDuckGo on top

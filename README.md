@@ -56,16 +56,6 @@ xcode-select --install
     - `dikig` - `https://www.diki.pl/slownik-niemieckiego?q={query}`
     - `collins` - `https://www.collinsdictionary.com/dictionary/german-english/{query}`
     - `conj` - `http://conjugator.reverso.net/conjugation-german-verb-{query}.html`
-  - Workflows
-    - [slackfred](http://www.packal.org/workflow/slackfred)
-    - [advanced-google-maps-search](http://www.packal.org/workflow/advanced-google-maps-search)
-    - [convert](http://www.packal.org/workflow/convert)
-    - [timezones](http://www.packal.org/workflow/timezones-0)
-    - [caniuse](http://www.packal.org/workflow/can-i-use)
-    - [font-awesome](https://github.com/ruedap/alfred-font-awesome-workflow)
-    - [encode-decode](https://github.com/willfarrell/alfred-encode-decode-workflow)
-    - [colors](http://www.packal.org/workflow/colors)
-    - [npms](https://github.com/sindresorhus/alfred-npms)
 - iTerm 2
   - General
     - :x: Copy to pasteboard on selection
@@ -82,3 +72,9 @@ xcode-select --install
       - Editor Tabs
         - :white_check_mark: Mark modified tabs with asterisk
         - :x: Show tabs in single row
+    - Code Style
+      - Other File Types
+        - Tab size: 2, Indent: 2
+  - Tools
+    - Terminal
+      - :x: Copy to clipboard on selection

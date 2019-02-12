@@ -23,17 +23,12 @@ brew install tree
 brew install elixir
 brew install sox
 brew install nginx
-brew install redis
 brew install postgresql
-brew install rabbitmq
-brew install mongodb
 brew install node
 brew install go
 brew install exercism
 brew install imagemagick
 brew install cowsay
-brew install sl
-brew install figlet
 
 brew tap caskroom/cask
 
@@ -53,8 +48,9 @@ brew cask install --appdir="/Applications" silverlight
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" telegram-desktop
 brew cask install --appdir="/Applications" discord
-brew cask install --appdir="/Applications" mongo-management-studio
 brew cask install --appdir="/Applications" slack
+brew cask install --appdir="/Applications" keka
+
 
 ./dotfiles/makesymlinks.sh
 ./bin/makesymlinks.sh

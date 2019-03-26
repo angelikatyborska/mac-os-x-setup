@@ -64,6 +64,9 @@ xcode-select --install
   - Profiles
     - Colors: Solarized Dark preset
     - Text: 13pt
+    - Terminal: :white_check_mark: Unlimited scrollback
+  - Pointer
+    - :x: Middle button single click - Paste from clipboard
 - RubyMine
   - Editor
     - General

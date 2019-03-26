@@ -80,3 +80,8 @@ xcode-select --install
   - Tools
     - Terminal
       - :x: Copy to clipboard on selection
+- Firefox
+  - Install extensions:
+    - 1password
+    - AdBlock Plus
+    - DuckDuckGo Privacy Essentials

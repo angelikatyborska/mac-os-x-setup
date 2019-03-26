@@ -83,6 +83,7 @@ xcode-select --install
   - Tools
     - Terminal
       - :x: Copy to clipboard on selection
+      - :x: Paste on middle mouse button click
 - Firefox
   - Install extensions:
     - 1password

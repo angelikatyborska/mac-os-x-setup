@@ -21,7 +21,8 @@ This repository is probably not very interesting to anyone but me. It's all abou
 - Date & Time
   - Clock
     - :white_check_mark: Show date
-
+- Dock
+  - :x: Show recent applications in Dock
 ## Finder defaults
 
 ```bash
@@ -47,7 +48,8 @@ xcode-select --install
 - Git
   - Add user.name and user.email to global config
   - Set `~/.gitignore` as `core.excludesfile`
-- Alfred 2
+- Alfred
+  - Activate Powerpack
   - Default Results - Setup fallback results
     - Remove Google, put DuckDuckGo on top
   - Web Search

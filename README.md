@@ -74,6 +74,8 @@ xcode-select --install
       - :white_check_mark: Ensure line feed at file end on Save
       - :white_check_mark: Highlight current scope
       - :x: Copy as rich text by default
+      - Appearance
+        - :white_check_mark: Show whitespaces
       - Editor Tabs
         - :white_check_mark: Mark modified tabs with asterisk
         - :x: Show tabs in single row

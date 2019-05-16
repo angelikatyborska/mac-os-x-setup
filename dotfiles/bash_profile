@@ -6,6 +6,7 @@ export GOPATH=$HOME/golang
 export GOROOT=/usr/local/opt/go/libexec
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:~/Library/Python/3.7/bin
 
 alias pdflatex="/Library/TeX/Root/bin/x86_64-darwin/pdflatex"
 alias ls="ls -hal"
@@ -18,9 +19,10 @@ source "${GITAWAREPROMPT}/main.sh"
 
 export PS1="\[$txtpur\]\u\[$txtrst\] at \[$txtblu\]\h\[$txtrst\] in \[$txtylw\]\w\[$txtrst\] \[$txtcyn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\n\$ "
 
-HISTCONTROL=ignoreboth
-HISTSIZE=10000
-HISTFILESIZE=10000
+export HISTCONTROL=ignoreboth
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export ERL_AFLAGS="-kernel shell_history enabled"
 
 rubymine() {
   RUBYMINE="/Applications/RubyMine.app/Contents/MacOS/rubymine"
@@ -86,3 +88,7 @@ exercism-download-and-test() {
 if [ -f ~/.bash_profile_priv ]; then
   source ~/.bash_profile_priv
 fi
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash

@@ -21,6 +21,7 @@ brew install vim
 brew install jsonpp
 brew install tree
 brew install elixir
+brew install asdf
 brew install sox
 brew install nginx
 brew install postgresql
@@ -33,20 +34,20 @@ brew install cowsay
 brew tap caskroom/cask
 
 brew cask install --appdir="/Applications" alfred
+brew cask install --appdir="/Applications" firefox-developer-edition
 brew cask install --appdir="/Applications" firefox
+brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" iterm2
 brew cask install --appdir="/Applications" sublime-text
-brew cask install --appdir="/Applications" google-chrome
 brew cask install --appdir="/Applications" shiftit
 brew cask install --appdir="/Applications" vlc
-brew cask install --appdir="/Applications" appcleaner
 brew cask install --appdir="/Applications" libreoffice
 brew cask install --appdir="/Applications" thunderbird
 brew cask install --appdir="/Applications" skype
 brew cask install --appdir="/Applications" rubymine
-brew cask install --appdir="/Applications" silverlight
 brew cask install --appdir="/Applications" dropbox
 brew cask install --appdir="/Applications" telegram-desktop
+brew cask install --appdir="/Applications" signal
 brew cask install --appdir="/Applications" discord
 brew cask install --appdir="/Applications" slack
 brew cask install --appdir="/Applications" keka

@@ -79,10 +79,7 @@ exercism-download-and-test() {
   echo $output;
   local dir=$(echo $output | sed 's/.*Downloaded to //');
   cd $dir;
-  local test_file=$(echo *_test.exs);
-  cat $test_file | grep -v '@tag :pending' > tmp;
-  mv tmp $test_file;
-  elixir $test_file;
+  mix test --include pending;
 }
 
 if [ -f ~/.bash_profile_priv ]; then

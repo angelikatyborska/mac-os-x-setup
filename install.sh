@@ -30,6 +30,7 @@ brew install go
 brew install exercism
 brew install imagemagick
 brew install cowsay
+brew install graphviz
 
 brew tap caskroom/cask
 

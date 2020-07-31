@@ -3,7 +3,7 @@
 dir=~/mac-os-x-setup/bin
 olddir=~/bin_old
 targetdir=~/bin
-files="blog-monitoring"
+files="blog-monitoring falling-tiles-monitoring"
 
 mkdir -p $olddir
 

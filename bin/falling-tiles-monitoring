@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+STATUS_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://falling-tiles.angelika.me);
+
+TITLE="Falling Tiles.Angelika.me";
+
+function notify() {
+  APPLE_SCRIPT_COMMAND="display notification \"$1\" with title \"${TITLE}\" sound name \"$2\"";
+  osascript -e "${APPLE_SCRIPT_COMMAND}";
+}
+
+if [ "$STATUS_CODE" = 200 ]; then
+  MESSAGE="${STATUS_CODE}: OK"
+  SOUND_NAME="Pop";
+  notify "${MESSAGE}" "${SOUND_NAME}"
+elif [ "$STATUS_CODE" = 000 ]; then
+  MESSAGE="${STATUS_CODE}: ??? No Internet Connection ???"
+  SOUND_NAME="Bottle";
+  notify "${MESSAGE}" "${SOUND_NAME}"
+else
+  MESSAGE="${STATUS_CODE}: Something is wrong!"
+  SOUND_NAME="Bottle";
+  notify "${MESSAGE}" "${SOUND_NAME}"
+  sleep 1;
+  say -v Bad\ News "${MESSAGE}";
+  osascript -e "display alert \"${TITLE} - ${MESSAGE}\"";
+fi
+

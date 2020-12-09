@@ -111,6 +111,8 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:~/Library/Python/3.7/bin
 
+export EXERCISM_PRETTIER_VERSION=2.1.2
+
 alias ls="ls -hal"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 

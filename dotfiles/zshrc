@@ -112,6 +112,7 @@ export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:~/Library/Python/3.7/bin
 
 export EXERCISM_PRETTIER_VERSION=2.1.2
+export KERL_BUILD_DOCS='yes'
 
 alias ls="ls -hal"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
@@ -203,3 +204,5 @@ fpath=(${ASDF_DIR}/completions $fpath)
 autoload -Uz compinit
 compinit
 
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

@@ -6,6 +6,7 @@ PROMPT+='
 
 RPROMPT=''
 
+ZSH_THEME_GIT_PROMPT_SEPARATOR=" | "
 ZSH_THEME_GIT_PROMPT_CHANGED="%{$fg[red]%}%{∙%G%}"
 ZSH_THEME_GIT_PROMPT_CONFLICTS="%{$fg[red]%}%{×%G%}"
 ZSH_THEME_GIT_PROMPT_STAGED="%{$fg[green]%}%{+%G%}"

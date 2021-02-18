@@ -3,7 +3,7 @@
 dir=~/mac-os-x-setup/LaunchAgents
 olddir=~/LaunchAgents_old
 targetdir=~/Library/LaunchAgents
-files="me.angelika.blog-monitoring.plist me.angelika.falling-tiles-monitoring.plist"
+files="me.angelika.blog-monitoring.plist me.angelika.falling-tiles-monitoring.plist me.angelika.mazes-monitoring.plist"
 
 mkdir -p $olddir
 

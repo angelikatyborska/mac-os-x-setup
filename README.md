@@ -2,6 +2,9 @@
 This repository is probably not very interesting to anyone but me. It's all about the things that need to be done to get a fresh install of Mac OS X configured to my liking. I'm writing all of this down here so that I do not have to think too much when reinstalling the system.
 
 ## System Preferences
+- General
+  - Show scroll bars
+     - :white_check_mark: Always
 - Keyboard
   - Keyboard
     - Modifier Keys

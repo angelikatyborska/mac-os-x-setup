@@ -15,7 +15,7 @@ This repository is probably not very interesting to anyone but me. It's all abou
     - Select the previous input source Shift + Command + L
   - Input Sources
     - Polish Pro
-    - [USGerman Keyboard Layout](https://hci.rwth-aachen.de/USGermanKeyboard)
+    - [USGerman Keyboard Layout](https://hci.rwth-aachen.de/usgermankeyboard)
 - Mission Control
   - Hot Corners
     - Top Right: Desktop

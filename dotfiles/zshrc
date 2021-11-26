@@ -101,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 
 # copied from my bash_profile
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 # replace sed with gnu-sed
 export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
@@ -198,7 +200,7 @@ if [ -f ~/.zshrc_priv ]; then
   source ~/.zshrc_priv
 fi
 
-. $HOME/.asdf/asdf.sh
+. $(brew --prefix asdf)/libexec/asdf.sh
 
 # append completions to fpath
 fpath=(${ASDF_DIR}/completions $fpath)

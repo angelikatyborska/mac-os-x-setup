@@ -2,7 +2,7 @@
 
 dir=~/mac-os-x-setup/dotfiles
 olddir=~/dotfiles_old
-files="bash_profile curlrc gitignore vimrc inputrc ideavimrc zshrc oh-my-zsh/themes/angelika.zsh-theme"
+files="curlrc gitignore vimrc inputrc ideavimrc zshrc oh-my-zsh/themes/angelika.zsh-theme"
 
 mkdir -p $olddir
 

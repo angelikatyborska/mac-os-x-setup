@@ -5,6 +5,7 @@ This repository is probably not very interesting to anyone but me. It's all abou
 - General
   - Show scroll bars
      - :white_check_mark: Always
+  - Default web browser: Firefox Developer Edition
 - Keyboard
   - Keyboard
     - Modifier Keys
@@ -30,6 +31,9 @@ This repository is probably not very interesting to anyone but me. It's all abou
   - :white_check_mark: Fast User Switching - Show in Menu Bar
   - :white_check_mark: Battery - Show Percentage
   - :x: Spotlight - Show in Menu Bar
+- Display
+  - Night shift
+    - 08:00 - 18:00
 
 ## Finder defaults
 
@@ -99,3 +103,4 @@ xcode-select --install
     - 1password
     - AdBlock Plus
     - DuckDuckGo Privacy Essentials
+- Carbon Copy Cloner

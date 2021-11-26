@@ -24,8 +24,13 @@ This repository is probably not very interesting to anyone but me. It's all abou
 - Date & Time
   - Clock
     - :white_check_mark: Show date
-- Dock
+- Dock & Menu Bar
   - :x: Show recent applications in Dock
+  - :white_check_mark: Bluetooth - Show in Menu Bar
+  - :white_check_mark: Fast User Switching - Show in Menu Bar
+  - :white_check_mark: Battery - Show Percentage
+  - :x: Spotlight - Show in Menu Bar
+
 ## Finder defaults
 
 ```bash

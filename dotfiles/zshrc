@@ -101,6 +101,8 @@ source $ZSH/oh-my-zsh.sh
 
 # copied from my bash_profile
 
+# replace sed with gnu-sed
+export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
 export PATH="$PATH:/opt/local/bin:/opt/local/sbin"
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:~/bin
@@ -111,7 +113,7 @@ export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:~/Library/Python/3.7/bin
 
-export EXERCISM_PRETTIER_VERSION=2.1.2
+export EXERCISM_PRETTIER_VERSION=2.3.2
 export KERL_BUILD_DOCS='yes'
 
 alias ls="ls -hal"

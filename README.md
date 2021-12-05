@@ -14,7 +14,7 @@ This repository is probably not very interesting to anyone but me. It's all abou
       - Command: Option (if using an Apple Keyboard)
   - Shortcuts
     - Select the previous input source Shift + Command + L
-    - :white_check_mark: se keyboard navigation to move focus between controls
+    - :white_check_mark: Use keyboard navigation to move focus between controls
   - Input Sources
     - Polish Pro
     - [USGerman Keyboard Layout](https://hci.rwth-aachen.de/usgermankeyboard)

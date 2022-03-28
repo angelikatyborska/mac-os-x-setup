@@ -18,6 +18,8 @@ brew install postgresql
 brew install exercism
 brew install imagemagick
 brew install graphviz
+brew install gh
+brew install jq
 
 brew tap homebrew/cask
 

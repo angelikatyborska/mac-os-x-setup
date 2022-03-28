@@ -99,9 +99,19 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 
-# copied from my bash_profile
+# use local brew because global brew cannot handle multiuser
+export PATH="~/brew/bin/:$PATH"
 
-eval "$(/opt/homebrew/bin/brew shellenv)"
+
+eval "$($HOME/brew/bin/brew shellenv)"
+
+. $(brew --prefix asdf)/libexec/asdf.sh
+
+# append completions to fpath
+fpath=(${ASDF_DIR}/completions $fpath)
+# initialise completions with ZSH's compinit
+autoload -Uz compinit
+compinit
 
 # replace sed with gnu-sed
 export PATH="$(brew --prefix)/opt/gnu-sed/libexec/gnubin:$PATH"
@@ -124,6 +134,23 @@ alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulato
 export PLUG_EDITOR='x-mine://open?file=__FILE__&line=__LINE__'
 export ECTO_EDITOR='rubymine'
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+npm() {
+  if [ -f yarn.lock ]; then
+    echo 'use yarn';
+  else
+    command npm --version;
+    command npm $*;
+  fi
+}
+
+yarn() {
+  if [ -f package-lock.json ]; then
+    echo 'use npm';
+  else
+    command yarn $*;
+  fi
+}
 
 rubymine() {
   RUBYMINE="/Applications/RubyMine.app/Contents/MacOS/rubymine"
@@ -200,13 +227,12 @@ if [ -f ~/.zshrc_priv ]; then
   source ~/.zshrc_priv
 fi
 
-. $(brew --prefix asdf)/libexec/asdf.sh
 
-# append completions to fpath
-fpath=(${ASDF_DIR}/completions $fpath)
-# initialise completions with ZSH's compinit
-autoload -Uz compinit
-compinit
+alias subl='/Applications/Sublime\ Text.app/Contents/MacOS/sublime_text'
+export LANG=en_US.UTF-8
+export LC_ALL=$LANG
+export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix zstd)/lib/
+export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix libssh2)/lib/
+export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix libssh)/lib/
 
-
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

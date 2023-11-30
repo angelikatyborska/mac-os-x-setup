@@ -132,7 +132,7 @@ alias ls="ls -hal"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
 
 export PLUG_EDITOR='x-mine://open?file=__FILE__&line=__LINE__'
-export ECTO_EDITOR='rubymine'
+export ECTO_EDITOR='webstorm'
 export ERL_AFLAGS="-kernel shell_history enabled"
 
 npm() {
@@ -158,6 +158,15 @@ rubymine() {
     command $RUBYMINE $(pwd)
   else
     command $RUBYMINE "$@"
+  fi
+}
+
+webstorm() {
+  WEBSTORM="~/Applications/WebStorm.app/Contents/MacOS/webstorm"
+  if [[ $@ == "." ]]; then
+    command $WEBSTORM $(pwd)
+  else
+    command $WEBSTORM "$@"
   fi
 }
 
@@ -235,4 +244,3 @@ export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix zstd)/lib/
 export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix libssh2)/lib/
 export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix libssh)/lib/
 
-# export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

@@ -26,11 +26,13 @@ This repository is probably not very interesting to anyone but me. It's all abou
 - Date & Time
   - Clock
     - :white_check_mark: Show date
-- Dock & Menu Bar
+- Dock
   - :x: Show recent applications in Dock
+- Control Center
   - :white_check_mark: Bluetooth - Show in Menu Bar
+  - :white_check_mark: Accessibility Shortcuts - Show in Menu Bar
   - :white_check_mark: Fast User Switching - Show in Menu Bar
-  - :white_check_mark: Battery - Show Percentage
+  - :white_check_mark: Battery - Show in Menu Bar && Show Percentage
   - :x: Spotlight - Show in Menu Bar
 - Display
   - Night shift
@@ -61,6 +63,8 @@ xcode-select --install
 - Git
   - Add user.name and user.email to global config
   - Set `~/.gitignore` as `core.excludesfile`
+- Terminal
+  - Install https://ohmyz.sh/#install
 - Alfred
   - Activate Powerpack
   - Default Results - Setup fallback results
@@ -75,7 +79,7 @@ xcode-select --install
   - General
     - :x: Copy to pasteboard on selection
   - Profiles
-    - Colors: Solarized Dark preset
+    - Colors: import https://draculatheme.com/iterm
     - Text: 13pt
     - Terminal: :white_check_mark: Unlimited scrollback
   - Pointer
@@ -100,8 +104,15 @@ xcode-select --install
       - :x: Copy to clipboard on selection
       - :x: Paste on middle mouse button click
 - Firefox
-  - Install extensions:
-    - 1password
-    - AdBlock Plus
-    - DuckDuckGo Privacy Essentials
+  - Log in to Firefox Sync to install extensions
+- Karabiner Elements
+  - On Apple Internal Keyboard, remap:
+    - left_command -> left_option
+    - left_option -> left_command
+    - right_command -> right_option
+    - right_option -> right_command
+- WebStorm via Jetbrains Toolbox (which comes from brew)
+  - Enable settings sync, pull settings from account
 - Carbon Copy Cloner
+- SSH
+  - Generate key and add to Github

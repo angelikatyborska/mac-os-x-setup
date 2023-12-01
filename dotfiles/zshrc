@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/angelika/.oh-my-zsh"
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -98,12 +98,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-# use local brew because global brew cannot handle multiuser
-export PATH="~/brew/bin/:$PATH"
-
-
-eval "$($HOME/brew/bin/brew shellenv)"
+# brew setup done in .zprofile because:
+# - it needs to happen first (before zshrc_priv)
+# - it's different on different laptops depending on single user vs multi user
 
 . $(brew --prefix asdf)/libexec/asdf.sh
 

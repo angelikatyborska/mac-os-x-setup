@@ -23,16 +23,17 @@ brew install jq
 
 brew tap homebrew/cask
 
-brew install --appdir="/Applications" alfred
-# brew install --appdir="/Applications" firefox-developer-edition
+# if I didn't upgrade my powerpack to newest version,
+# I need to install old alfred 4 manually instead https://www.alfredapp.com/help/v4/
+# brew install --appdir="/Applications" alfred
+brew tap homebrew/cask-versions
+brew install --appdir="/Applications" firefox-developer-edition
 brew install --appdir="/Applications" google-chrome
 brew install --appdir="/Applications" iterm2
 brew install --appdir="/Applications" sublime-text
-brew install --appdir="/Applications" shiftit
 brew install --appdir="/Applications" vlc
 brew install --appdir="/Applications" libreoffice
 brew install --appdir="/Applications" thunderbird
-brew install --appdir="/Applications" rubymine
 brew install --appdir="/Applications" dropbox
 brew install --appdir="/Applications" telegram-desktop
 brew install --appdir="/Applications" signal
@@ -42,6 +43,10 @@ brew install --appdir="/Applications" keka
 brew install --appdir="/Applications" whatsapp
 brew install --appdir="/Applications" 1password
 brew install --appdir="/Applications" spotify
+brew install --appdir="/Applications" hammerspoon
+# and then set up https://github.com/peterklijn/hammerspoon-shiftit
+brew install --appdir="/Applications" jetbrains-toolbox
+brew install --appdir="/Applications" carbon-copy-cloner
 
 
 # gifox, good notes and boxy svg downloaded through the App Store

@@ -6,6 +6,9 @@ files="curlrc gitignore vimrc inputrc ideavimrc zshrc oh-my-zsh/themes/angelika.
 
 mkdir -p $olddir
 
+mkdir -p ~/.oh-my-zsh
+mkdir -p ~/.oh-my-zsh/themes
+
 cd $dir
 
 for file in $files; do

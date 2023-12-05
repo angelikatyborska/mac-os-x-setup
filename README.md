@@ -1,6 +1,9 @@
 # Mac OS X setup
 This repository is probably not very interesting to anyone but me. It's all about the things that need to be done to get a fresh install of Mac OS X configured to my liking. I'm writing all of this down here so that I do not have to think too much when reinstalling the system.
 
+- ⚠️ ENCRYPT YOUR DRIVE FIRST.
+- ⚠️ Checkout this project in your home directory.
+
 ## System Preferences
 - General
   - Show scroll bars
@@ -114,5 +117,6 @@ xcode-select --install
 - WebStorm via Jetbrains Toolbox (which comes from brew)
   - Enable settings sync, pull settings from account
 - Carbon Copy Cloner
+- ColorPicker
 - SSH
   - Generate key and add to Github

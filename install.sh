@@ -21,8 +21,6 @@ brew install graphviz
 brew install gh
 brew install jq
 
-brew tap homebrew/cask
-
 # if I didn't upgrade my powerpack to newest version,
 # I need to install old alfred 4 manually instead https://www.alfredapp.com/help/v4/
 # brew install --appdir="/Applications" alfred

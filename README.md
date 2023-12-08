@@ -21,6 +21,7 @@ This repository is probably not very interesting to anyone but me. It's all abou
   - Input Sources
     - Polish Pro
     - [USGerman Keyboard Layout](https://hci.rwth-aachen.de/usgermankeyboard)
+  - Keyboard navigation :white_check_mark:
 - Mission Control
   - Hot Corners
     - Top Right: Desktop

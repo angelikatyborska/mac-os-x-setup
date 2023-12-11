@@ -30,6 +30,8 @@ This repository is probably not very interesting to anyone but me. It's all abou
 - Date & Time
   - Clock
     - :white_check_mark: Show date
+- Language & Region:
+  - Set 3 preferred languages in this order: English (UK), German (Germany), Polish. This should add leading zeros in dates and times.
 - Dock
   - :x: Show recent applications in Dock
 - Control Center

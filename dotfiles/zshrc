@@ -127,6 +127,7 @@ export KERL_BUILD_DOCS='yes'
 
 alias ls="ls -hal"
 alias ios="open /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app"
+alias git-push-force="git push --force-with-lease --force-if-includes"
 
 export PLUG_EDITOR='x-mine://open?file=__FILE__&line=__LINE__'
 export ECTO_EDITOR='webstorm'
@@ -241,3 +242,4 @@ export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix zstd)/lib/
 export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix libssh2)/lib/
 export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix libssh)/lib/
 
+export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

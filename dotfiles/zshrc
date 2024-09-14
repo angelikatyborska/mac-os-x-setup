@@ -150,24 +150,6 @@ yarn() {
   fi
 }
 
-rubymine() {
-  RUBYMINE="/Applications/RubyMine.app/Contents/MacOS/rubymine"
-  if [[ $@ == "." ]]; then
-    command $RUBYMINE $(pwd)
-  else
-    command $RUBYMINE "$@"
-  fi
-}
-
-webstorm() {
-  WEBSTORM="~/Applications/WebStorm.app/Contents/MacOS/webstorm"
-  if [[ $@ == "." ]]; then
-    command $WEBSTORM $(pwd)
-  else
-    command $WEBSTORM "$@"
-  fi
-}
-
 killscreens() {
   screen -ls | grep Detached | cut -d. -f1 | awk '{print $1}' | xargs kill
 }

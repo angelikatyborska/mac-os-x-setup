@@ -90,25 +90,6 @@ xcode-select --install
     - Terminal: :white_check_mark: Unlimited scrollback
   - Pointer
     - :x: Middle button single click - Paste from clipboard
-- RubyMine
-  - Editor
-    - General
-      - :white_check_mark: Use soft wraps in editor
-      - :white_check_mark: Ensure line feed at file end on Save
-      - :white_check_mark: Highlight current scope
-      - :x: Copy as rich text by default
-      - Appearance
-        - :white_check_mark: Show whitespaces
-      - Editor Tabs
-        - :white_check_mark: Mark modified tabs with asterisk
-        - :x: Show tabs in single row
-    - Code Style
-      - Other File Types
-        - Tab size: 2, Indent: 2
-  - Tools
-    - Terminal
-      - :x: Copy to clipboard on selection
-      - :x: Paste on middle mouse button click
 - Firefox
   - Log in to Firefox Sync to install extensions
 - Karabiner Elements
@@ -119,7 +100,13 @@ xcode-select --install
     - right_option -> right_command
 - WebStorm via Jetbrains Toolbox (which comes from brew)
   - Enable settings sync, pull settings from account
+  - In Jetbrains Toolbox, verify that a shell script was created
 - Carbon Copy Cloner
 - ColorPicker
 - SSH
   - Generate key and add to Github
+- Shottr
+  - Activate license 
+  - In system preferences, turn off screenshot keyboard shortcuts
+  - Let Shottr use those shortcuts instead
+  - Set Desktop as folder

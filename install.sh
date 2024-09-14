@@ -45,6 +45,8 @@ brew install --appdir="/Applications" hammerspoon
 # and then set up https://github.com/peterklijn/hammerspoon-shiftit
 brew install --appdir="/Applications" jetbrains-toolbox
 brew install --appdir="/Applications" carbon-copy-cloner
+brew install --appdir="/Applications" shottr
+brew install --appdir="/Applications" imageoptim
 
 
 # gifox, good notes and boxy svg downloaded through the App Store

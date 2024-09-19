@@ -43,6 +43,8 @@ This repository is probably not very interesting to anyone but me. It's all abou
 - Display
   - Night shift
     - 08:00 - 18:00
+- Airdrop
+  - turn off AirPlay receiver to release port 5000
 
 ## Finder defaults
 

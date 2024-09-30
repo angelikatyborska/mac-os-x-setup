@@ -5,7 +5,6 @@
 
 brew update
 
-brew install brew-cask
 brew install nmap
 brew install pstree
 brew install vim
@@ -23,30 +22,29 @@ brew install jq
 
 # if I didn't upgrade my powerpack to newest version,
 # I need to install old alfred 4 manually instead https://www.alfredapp.com/help/v4/
-# brew install --appdir="/Applications" alfred
-brew tap homebrew/cask-versions
-brew install --appdir="/Applications" firefox-developer-edition
-brew install --appdir="/Applications" google-chrome
-brew install --appdir="/Applications" iterm2
-brew install --appdir="/Applications" sublime-text
-brew install --appdir="/Applications" vlc
-brew install --appdir="/Applications" libreoffice
-brew install --appdir="/Applications" thunderbird
-brew install --appdir="/Applications" dropbox
-brew install --appdir="/Applications" telegram-desktop
-brew install --appdir="/Applications" signal
-brew install --appdir="/Applications" discord
-brew install --appdir="/Applications" slack
-brew install --appdir="/Applications" keka
-brew install --appdir="/Applications" whatsapp
-brew install --appdir="/Applications" 1password
-brew install --appdir="/Applications" spotify
-brew install --appdir="/Applications" hammerspoon
+# brew install --cask --appdir="/Applications" alfred
+brew install --cask --appdir="/Applications" firefox-developer-edition
+brew install --cask --appdir="/Applications" google-chrome
+brew install --cask --appdir="/Applications" iterm2
+brew install --cask --appdir="/Applications" sublime-text
+brew install --cask --appdir="/Applications" vlc
+brew install --cask --appdir="/Applications" libreoffice
+brew install --cask --appdir="/Applications" thunderbird
+brew install --cask --appdir="/Applications" dropbox
+brew install --cask --appdir="/Applications" telegram-desktop
+brew install --cask --appdir="/Applications" signal
+brew install --cask --appdir="/Applications" discord
+brew install --cask --appdir="/Applications" slack
+brew install --cask --appdir="/Applications" keka
+brew install --cask --appdir="/Applications" whatsapp
+brew install --cask --appdir="/Applications" 1password
+brew install --cask --appdir="/Applications" spotify
+brew install --cask --appdir="/Applications" hammerspoon
 # and then set up https://github.com/peterklijn/hammerspoon-shiftit
-brew install --appdir="/Applications" jetbrains-toolbox
-brew install --appdir="/Applications" carbon-copy-cloner
-brew install --appdir="/Applications" shottr
-brew install --appdir="/Applications" imageoptim
+brew install --cask --appdir="/Applications" jetbrains-toolbox
+brew install --cask --appdir="/Applications" carbon-copy-cloner
+brew install --cask --appdir="/Applications" shottr
+brew install --cask --appdir="/Applications" imageoptim
 
 
 # gifox, good notes and boxy svg downloaded through the App Store

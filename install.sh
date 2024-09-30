@@ -51,6 +51,8 @@ brew install --appdir="/Applications" imageoptim
 
 # gifox, good notes and boxy svg downloaded through the App Store
 
+# install oh-my-zsh before making symlinks https://ohmyz.sh/#install
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 ./dotfiles/makesymlinks.sh
 ./bin/makesymlinks.sh

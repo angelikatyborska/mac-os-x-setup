@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
   <key>Label</key>
-  <string>me.angelika.falling-mazes-monitoring</string>
+  <string>me.angelika.mazes-monitoring</string>
   <key>ProgramArguments</key>
   <array>
     <string>bash</string>
     <string>-c</string>
-    <string>~/bin/falling-mazes-monitoring</string>
+    <string>~/bin/mazes-monitoring</string>
   </array>
   <key>StartInterval</key>
   <integer>5400</integer>

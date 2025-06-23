@@ -68,7 +68,7 @@ ZSH_THEME="angelika"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git-prompt)
+plugins=(git-prompt zsh-npm-scripts-autocomplete)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -221,3 +221,10 @@ export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix libssh2)/lib/
 export LIBRARY_PATH=$LIBRARY_PATH:$(brew --prefix libssh)/lib/
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+
+# bun completions
+[ -s "/Users/angelikacathor/.bun/_bun" ] && source "/Users/angelikacathor/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

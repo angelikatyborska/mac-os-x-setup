@@ -2,12 +2,13 @@
 
 dir=~/mac-os-x-setup/dotfiles
 olddir=~/dotfiles_old
-files="curlrc gitignore vimrc inputrc ideavimrc zshrc oh-my-zsh/themes/angelika.zsh-theme"
+files="curlrc gitignore vimrc inputrc ideavimrc zshrc oh-my-zsh/themes/angelika.zsh-theme hammerspoon/init.lua"
 
 mkdir -p $olddir
 
 mkdir -p ~/.oh-my-zsh
 mkdir -p ~/.oh-my-zsh/themes
+mkdir -p ~/.hammerspoon
 
 cd $dir
 

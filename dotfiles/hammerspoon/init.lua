@@ -4,15 +4,16 @@ spoon.ShiftIt:setWindowCyclingSizes({ 50, 33, 67 }, { 50 })
 
 
 ctrlAltShortcuts = {
-    {"F", "Firefox Developer Edition"},
-    {"S", "Slack"},
-    {"D", "Discord"},
-    {"C", "Calendar"},
     {"W", "WhatsApp"},
+    {"E", "iTerm"},
+    {"R", "Finder"},
     {"T", "Telegram Desktop"},
     {"A", "WebStorm"},
-    {"E", "iTerm"},
+    {"S", "Slack"},
+    {"D", "Discord"},
+    {"F", "Firefox Developer Edition"},
     {"X", "Sublime Text"},
+    {"C", "Calendar"},
 }
 
 for i,shortcut in ipairs(ctrlAltShortcuts) do
